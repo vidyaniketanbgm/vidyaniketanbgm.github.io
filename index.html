@@ -24,6 +24,10 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;1,200&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Signika:wght@500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com/3.2.4"></script>
     <script>
       tailwind.config = {
@@ -33,6 +37,9 @@
             sans: ["Roboto", "sans-serif"],
             body: ["Roboto", "sans-serif"],
             mono: ["ui-monospace", "monospace"],
+            head: ["Titillium Web", "sans-serif"],
+            cursive: ["Shadows Into Light", "cursive"],
+            smallhead: ["Signika", "sans-serif"],
           },
         },
         corePlugins: {
@@ -40,9 +47,16 @@
         },
       };
   </script>
-    <title>Marathi Vidyaniketan, Belgaum</title>
+  <title>
+    Marathi Vidyaniketan, Belgaum
+  </title>
+  <style>
+    h3, h6 {
+      font-family: 'Signika', 'sans-serif';
+    }
+  </style>
   </head>
-  <body class="text-gray-800 antialiased">
+  <body class="text-gray-800 antialiased font-body">
     <nav
       class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
     >
@@ -72,11 +86,11 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
+                href="#gallery"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"
+                  class="lg:text-gray-300 text-gray-500 far fa-image text-lg leading-lg mr-2"
                 ></i>
-                Docs</a
+                Gallery</a
               >
             </li>
           </ul>
@@ -140,12 +154,12 @@
         </div>
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="w-full lg:w-6/12 ml-auto mr-auto text-center">
               <div class="p-8">
-                <h1 class="text-white font-semibold text-5xl pt-16" style="padding-top: 200px;">
+                <h1 class="text-white font-semibold text-4xl lg:text-5xl pt-[160px] font-head">
                   Marathi Vidyaniketan
                 </h1>
-                <p class="mt-4 text-lg text-white font-medium">
+                <p class="mt-4 text-lg text-white italic font-head">
                   Renowned Marathi medium school, located in Camp, Belagavi.
                 </p>
               </div>
@@ -172,7 +186,7 @@
           </svg>
         </div>
       </div>
-      <section class="pb-20 bg-gray-400 -mt-24">
+      <section class="pb-20 bg-gray-400 -mt-32">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -231,10 +245,10 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-wrap items-center mt-32">
+          <div class="flex flex-wrap items-center mt-24">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <div
-                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-xl rounded-full bg-gray-100"
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-4 -ml-3 shadow-xl rounded-full bg-gray-100"
               >
                 <i class="fas fa-book-open text-xl"></i>
               </div>
@@ -313,17 +327,17 @@
         </div>
         <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-[150px] mr-auto px-4 -mt-6 mb-6">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 -mt-6 mb-6">
               <img
                 alt="..."
-                class="max-w-full rounded-lg shadow-lg h-[600px]"
+                class="ml-auto mr-auto max-w-full rounded-lg shadow-lg w-64 lg:w-96"
                 src=".\assets\school-photos\assembly_copy.png"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <div
-                  class="text-slate-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-xl rounded-full bg-pink-300"
+                  class="text-slate-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-4 -ml-3 shadow-xl rounded-full bg-pink-300"
                 >
                   <i class="fas fa-users text-xl"></i>
                 </div>
@@ -403,11 +417,11 @@
           <div class="flex flex-wrap items-center">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <div
-                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-xl rounded-full bg-gray-100"
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-4 -ml-3 shadow-xl rounded-full bg-gray-100"
               >
                 <i class="fas fa-child text-xl"></i>
               </div>
-              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              <h3 class="text-3xl mb-2 font-semibold leading-normal whitespace-nowrap">
                 Work - play balance
               </h3>
               <p
@@ -477,15 +491,15 @@
             ></polygon>
           </svg>
         </div>
-        <div class="container mx-auto relative -mt-20 mb-20">
+        <div class="container mx-auto relative -mt-20 mb-auto">
           <section class="overflow-visible text-neutral-700">
-            <div class="container mx-auto px-5 py-1 lg:px-32 lg:pt-8">
+            <div class="container mx-auto py-1 lg:px-32 lg:pt-8">
               <div class="items-center flex flex-wrap">
-                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                <div class="w-full lg:w-6/12 ml-auto mr-auto text-center">
                   <div class="p-12">
-                    <h1 class="text-gray-300 font-semibold text-5xl pt-16 uppercase italic">
+                    <h3 class="text-gray-300 font-semibold text-4xl pt-16 uppercase italic whitespace-nowrap font-cursive" id="gallery">
                       Photo Gallery
-                    </h1>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -611,7 +625,7 @@
             ></polygon>
           </svg>
         </div>
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <div class="container mx-auto px-4 pt-24 lg:pb-64">
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
               <h2 class="text-4xl font-semibold text-white">Build something</h2>
