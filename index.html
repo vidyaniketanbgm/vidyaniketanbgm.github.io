@@ -18,6 +18,28 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+  </script>
     <title>Marathi Vidyaniketan, Belgaum</title>
   </head>
   <body class="text-gray-800 antialiased">
@@ -113,17 +135,17 @@
         >
           <span
             id="blackOverlay"
-            class="w-full h-full absolute opacity-50 bg-black"
+            class="w-full h-full absolute opacity-25 bg-black"
           ></span>
         </div>
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="p-8">
-                <h1 class="text-white font-semibold text-5xl">
+                <h1 class="text-white font-semibold text-5xl pt-16" style="padding-top: 200px;">
                   Marathi Vidyaniketan
                 </h1>
-                <p class="mt-4 text-lg text-white">
+                <p class="mt-4 text-lg text-white font-medium">
                   Renowned Marathi medium school, located in Camp, Belagavi.
                 </p>
               </div>
@@ -212,7 +234,7 @@
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <div
-                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-xl rounded-full bg-gray-100"
               >
                 <i class="fas fa-book-open text-xl"></i>
               </div>
@@ -236,7 +258,7 @@
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg bg-pink-600"
               >
                 <img
                   alt="..."
@@ -269,7 +291,7 @@
           </div>
         </div>
       </section>
-      <section class="relative py-20">
+      <section class="relative py-20 bg-gray-800 py-24">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px;"
@@ -284,8 +306,8 @@
             y="0"
           >
             <polygon
-              class="text-white fill-current"
-              points="2560 0 2560 100 0 100"
+              class="text-grey-800 fill-current"
+              points="0 0 2560 100 0 100"
             ></polygon>
           </svg>
         </div>
@@ -301,12 +323,12 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <div
-                  class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
+                  class="text-slate-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-xl rounded-full bg-pink-300"
                 >
                   <i class="fas fa-users text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-semibold">Holistic Growth</h3>
-                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                <h3 class="text-3xl font-semibold text-gray-200">Holistic Growth</h3>
+                <p class="mt-4 text-lg leading-relaxed text-gray-400">
                   Our focus extends beyond academic teaching.
                 </p>
                 <ul class="list-none mt-6">
@@ -319,7 +341,7 @@
                         ></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">
+                        <h4 class="text-gray-400">
                           Promoting human values
                         </h4>
                       </div>
@@ -334,7 +356,7 @@
                         ></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Enhance thinking abilities</h4>
+                        <h4 class="text-gray-400">Enhance thinking abilities</h4>
                       </div>
                     </div>
                   </li>
@@ -347,7 +369,7 @@
                         ></span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Spreading knowledge</h4>
+                        <h4 class="text-gray-400">Spreading knowledge</h4>
                       </div>
                     </div>
                   </li>
@@ -357,157 +379,217 @@
           </div>
         </div>
       </section>
-      <section class="pt-20 pb-48">
+      <section class="relative py-20 bg-gray-300">
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center text-center mb-24">
-            <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold">Here are our heroes</h2>
-              <p class="text-lg leading-relaxed m-4 text-gray-600">
-                According to the National Oceanic and Atmospheric
-                Administration, Ted, Scambos, NSIDClead scentist, puts the
-                potentially record maximum.
+          <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 "
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+          </div>
+          <div class="flex flex-wrap items-center">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-xl rounded-full bg-gray-100"
+              >
+                <i class="fas fa-child text-xl"></i>
+              </div>
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Work - play balance
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-800"
+              >
+                Our curriculum allocates efforts towards sporting and other
+                activities, to keep students active and enjoy their time here,
+                at their 'second home'<div class=""></div>
+              </p>
+              <p
+                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-800"
+              >
+                It's not all work and no play around here!
               </p>
             </div>
-          </div>
-          <div class="flex flex-wrap">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg bg-blue-400"
+              >
                 <img
                   alt="..."
-                  src="./assets/img/team-1-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
+                  src="./assets/school-photos/balmandir playground.png"
+                  class="w-full align-middle rounded-t-lg"
                 />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Ryan Tompson</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Web Developer
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px;"
+                  >
+                    <polygon
+                      points="-30,69 583,95 -30,95"
+                      class="text-blue-400 fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-white">
+                    Fun alongside learning!
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                    Playground to allow time off from studies.
                   </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i></button
-                    ><button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="./assets/img/team-2-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Romina Hadid</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Marketing Specialist
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="./assets/img/team-3-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Alexa Smith</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    UI/UX Designer
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="./assets/img/team-4-470x470.png"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Jenna Kardi</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Founder and CEO
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i></button
-                    ><button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
-                  </div>
-                </div>
+                </blockquote>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="relative py-20 bg-gray-800 pt-12 pb-32">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-grey-800 fill-current"
+              points="0 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto relative">
+          <section class="overflow-visible text-neutral-700">
+            <div class="container mx-auto px-5 py-1 lg:px-32 lg:pt-8">
+              <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                  <div class="p-12">
+                    <h1 class="text-gray-300 font-semibold text-5xl pt-16 uppercase italic">
+                      Photo Gallery
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div class="-m-1 flex flex-wrap md:-m-2">
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/1.entrance.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/2.garden.png" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/3.staff-room.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/4.atal.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/5.atal2.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/6.atal3.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/7.hall.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/8.computer.png" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/9.nurserypg.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/10.nursery.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/11.schoolbldg2.jpg" />
+                  </div>
+                </div>
+                <div class="flex w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl hover:scale-125 transition-all"
+                      src="./assets/school-photos/12.entrance.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
       </section>
       <section class="pb-20 relative block bg-gray-900">
         <div
@@ -589,7 +671,7 @@
           <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
             <div class="w-full lg:w-6/12 px-4">
               <div
-                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-xl rounded-lg bg-gray-300"
               >
                 <div class="flex-auto p-5 lg:p-10">
                   <h4 class="text-2xl font-semibold">Want to work with us?</h4>
