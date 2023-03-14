@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/school-icon.ico" />
+    <link
+      rel="school-touch-icon"
+      sizes="76x76"
+      href="./assets/img/school-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;1,200&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Signika:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+            head: ["Titillium Web", "sans-serif"],
+            cursive: ["Shadows Into Light", "cursive"],
+            smallhead: ["Signika", "sans-serif"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+  </script>
+  <title>
+    Marathi Vidyaniketan, Belgaum
+  </title>
+  <style>
+    h3, h6 {
+      font-family: 'Signika', 'sans-serif';
+    }
+  </style>
+  </head>
+  <body class="text-gray-800 antialiased font-body">
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start lg:bg-amber-600 rounded-lg"
+        >
+          <a
+            class="text-sm font-bold leading-relaxed inline-block px-4 py-2 whitespace-nowrap uppercase text-gray-200 hover:text-blue-900"
+            href="./index.html"
+            >Marathi Vidyaniketan</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden rounded-lg"
+          id="example-collapse-navbar"
+        >
+        <ul class="flex flex-col lg:flex-row list-none mr-auto lg:ml-2 lg:bg-gray-800 lg:rounded-lg">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs lg:text-sm uppercase font-bold lg:hover:text-gray-400 hover:text-gray-400"
+                href="./gallery.html"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 far fa-image text-lg leading-lg mr-2"
+                ></i>
+                Gallery</a
+              >
+            </li>
+          </ul>
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 hover:text-gray-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.facebook.com/MarathiVidhyaNiketan"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg lg:hover:text-gray-400"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Facebook</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 hover:text-gray-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="mailto:marathividyaniketan1@gmail.com"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fa fa-envelope text-lg leading-lg lg:hover:text-gray-400"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Email Us</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 hover:text-gray-400 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://github.com/vidyaniketanbgm/vidyaniketanbgm.github.io"
+                ><i
+                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg lg:hover:text-gray-400"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Github</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 75vh;"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("./assets/school-photos/pics/slide5.jpg");'
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-25 bg-black"
+          ></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 ml-auto mr-auto text-center">
+              <div class="p-8">
+                <h1 class="text-white font-semibold text-4xl lg:text-5xl pt-[160px] font-head">
+                  Marathi Vidyaniketan
+                </h1>
+                <p class="mt-4 text-lg text-white italic font-head">
+                  Renowned Marathi medium school, located in Camp, Belagavi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-700 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <section class="relative py-20 bg-gray-300 pt-12 pb-32">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto relative -mt-20 mb-auto">
+          <section class="overflow-visible text-neutral-700">
+            <div class="container mx-auto py-1 lg:px-32 lg:pt-8">
+              <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 ml-auto mr-auto text-center">
+                  <div class="p-12">
+                    <h3 class="text-gray-800 font-semibold text-4xl pt-16 uppercase italic whitespace-nowrap font-cursive" id="gallery">
+                      Photo Gallery
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="-m-1 flex flex-wrap md:-m-2">
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/1.entrance.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Main Entrance
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/2.garden.png" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Garden
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/3.staff-room.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Staff Room
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/4.atal.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Atal Lab
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/5.atal2.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Atal Lab
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/6.atal3.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Atal Lab
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/7.hall.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    School Hallway
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/8.computer.png" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Computer Lab
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/9.nurserypg.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Nursery Garden
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/10.nursery.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Nursery Section
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/11.schoolbldg2.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    School Building
+                  </p>
+                </div>
+                <div class="flex w-full lg:w-1/3 flex-wrap">
+                  <div class="w-full p-1 md:p-2">
+                    <img
+                      alt="gallery"
+                      class="block h-full w-full rounded-lg object-cover object-center shadow-none hover:shadow-2xl lg:hover:scale-150 transition-all duration-300"
+                      src="./assets/school-photos/12.entrance.jpg" />
+                  </div>
+                  <p class="mb-2 text-lg text-gray-500 italic font-head mx-auto text-xs">
+                    Entrance
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
+      </section>
+      <section class="pb-20 relative block bg-gray-900">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-900 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto pt-24 lg:pb-64">
+            <div class="flex flex-wrap text-center justify-center">
+              <div class="w-full lg:w-6/12">
+                <h2 class="text-3xl font-semibold text-white font-head font-semibold whitespace-nowrap">Marathi Vidyaniketan</h2>
+                <p class="text-lg tracking-tighter mb-4 text-gray-600 italic font-head whitespace-nowrap">
+                  Institute under Dakshin Maharashtra Education Society
+                </p>
+                <p class="leading-relaxed tracking-tight mt-2 mb-4 text-gray-500">
+                  Jyoti College Compound, Camp, Belgaum, India - 590001<br>
+                  Ph: <a href="tel:08312420464" class="hover:text-gray-400">0831-2420464</a> / <a href="tel:8050388604" class="hover:text-gray-400">8050388604</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="relative block py-24 lg:pt-0 bg-gray-900">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center lg:-mt-64 -mt-28">
+              <div class="w-full lg:w-6/12 px-4">
+                <div
+                  class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-xl rounded-lg bg-gray-300"
+                >
+                  <div class="flex-auto p-5 lg:p-10" id="contact-us">
+                    <h4 class="text-2xl font-semibold font-smallhead leading-normal">Contact Us</h4>
+                    <div class="relative w-full mb-3 mt-8">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="full-name"
+                        >Full Name</label
+                      ><input
+                        type="text"
+                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                        placeholder="Full Name"
+                        style="transition: all 0.15s ease 0s;"
+                      />
+                    </div>
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="email"
+                        >Email</label
+                      ><input
+                        type="email"
+                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                        placeholder="Email"
+                        style="transition: all 0.15s ease 0s;"
+                      />
+                    </div>
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="message"
+                        >Message</label
+                      ><textarea
+                        rows="4"
+                        cols="80"
+                        class="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                        style="transition: all 0.15s ease 0s;"
+                        placeholder="Type a message..."
+                      ></textarea>
+                    </div>
+                    <div class="text-center mt-6">
+                      <button
+                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg hover:bg-gray-600 outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                        style="transition: all 0.15s ease 0s;"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="relative bg-gray-400 pt-8 pb-6">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-400 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 pb-6">
+              <h4 class="text-3xl font-semibold font-smallhead">Follow us!</h4>
+              <h5 class="text-lg mt-2 -mb-4 text-gray-700">
+                You can find our pages on these platforms -
+              </h5>
+              <div class="mt-6">
+                <button
+                  class="bg-white text-gray-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline outline-1 hover:outline-2 focus:outline-none mr-2 p-3"
+                  type="button"
+                  onclick="window.location.href='https://facebook.com/MarathiVidhyaNiketan/';"
+                >
+                  <i class="flex fab fa-facebook-square"></i></button
+                ><button
+                  class="bg-white text-gray-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline outline-1 hover:outline-2 focus:outline-none mr-2 p-3"
+                  type="button"
+                  onclick="window.location.href='https://vidyaniketanbgm.github.io/';"
+                >
+                  <i class="flex fa fa-link"></i></button
+                ><button
+                  class="bg-white text-gray-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline outline-1 hover:outline-2 focus:outline-none mr-2 p-3"
+                  type="button"
+                  onclick="window.location.href='https://github.com/vidyaniketanbgm/vidyaniketanbgm.github.io';"
+                >
+                  <i class="flex fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-4">
+              <div class="flex flex-wrap items-top mb-6">
+                <div class="w-full lg:w-4/12 lg:px-4 ml-auto">
+                  <span
+                    class="block uppercase text-gray-600 text-sm font-semibold mb-2 mt-4 lg:mt-0"
+                    >Useful Links</span
+                  >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a
+                        class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.facebook.com/MarathiVidhyaNiketan"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="mailto:marathividyaniketan1@gmail.com"
+                        >Email</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="https://www.github.com/vidyaniketanbgm/vidyaniketanbgm.github.io/"
+                        >Github</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-full lg:w-4/12 lg:px-4 mt-4 lg:mt-0">
+                  <span
+                    class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                    >Other Resources</span
+                  >
+                  <ul class="list-unstyled">
+                    <li>
+                      <a
+                        class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="./index.html"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="./gallery.html"
+                        >Gallery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                        href="#contact-us"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-400" />
+          <div
+            class="flex flex-wrap items-center md:justify-between justify-center"
+          >
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+              <div class="text-sm text-gray-600 font-semibold py-1">
+                © Copyright 2023
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+    <script>
+      function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+      }
+    </script>
+  </html>
+  
